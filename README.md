@@ -13,4 +13,6 @@ After attending some spaces on the blue bird talking about the Web 3.0 and all t
 
 ### Stacks
 
--ReactJS
+- ViteJS
+- ReactJS
+- Tailwind CSS
