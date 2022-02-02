@@ -23,11 +23,14 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     step="0.0001"
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism "
   />
-);  
+);
 
 const Welcome = () => {
   // helps to connect wallet
   const connectWallet = () => {};
+
+  // submit
+  const handleSubmit = () => {};
 
   return (
     <div className="flex w-full justify-center items-center">
@@ -107,6 +110,20 @@ const Welcome = () => {
               // handleChange function
               handleChange={() => {}}
             />
+            <div className="h-[1px] w-full bg-gray-400 my-2" />
+
+            {/* act regarding if it is loading or not */}
+            {false ? (
+              <Loader />
+            ) : (
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer"
+              >
+                Send Now
+              </button>
+            )}
           </div>
         </div>
       </div>
